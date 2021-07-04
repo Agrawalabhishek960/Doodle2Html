@@ -4,7 +4,7 @@ from __future__ import absolute_import
 
 from argparse import ArgumentParser
 
-from classes.model.SketchCodeModel import *
+from classes.model.DoodletoHtmlModel import *
 
 VAL_SPLIT = 0.2
 
@@ -46,7 +46,7 @@ def main():
     augment_training_data = options.augment_training_data
 
     # Load model
-    model = SketchCodeModel(model_output_path, model_json_file, model_weights_file)
+    model = DoodletoHtmlModel(model_output_path, model_json_file, model_weights_file)
 
     # Create the model output path if it doesn't exist
     if not os.path.exists(model_output_path):
