@@ -13,7 +13,7 @@ from classes.dataset.Dataset import *
 MAX_LENGTH = 48
 MAX_SEQ    = 150
 
-class SketchCodeModel():
+class DoodletoHtmlModel():
 
     def __init__(self, model_output_path, model_json_file=None, model_weights_file=None):
 
